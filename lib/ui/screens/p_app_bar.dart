@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 class PAppBar extends StatelessWidget implements PreferredSizeWidget{
 
 
-  bool darkMode = false;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +20,11 @@ var appState = Provider.of<AppState>(context);
             value: appState.isDark, activeColor: Theme.of(context).accentColor,
           onChanged:appState.toggleDark),
         IconButton(icon: Icon(FontAwesomeIcons.userAstronaut),
-          onPressed: (){
-        //TODO login
-      },),],
+          onPressed: (){}),],
     );
   }
 
   @override
-  // TODO: implement preferredSize
+ 
   Size get preferredSize => Size.fromHeight(50);
 }
